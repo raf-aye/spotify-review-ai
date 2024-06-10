@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+  .name {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:whitesmoke;
+    font-size: 72px;
+    display: block;
+    margin-right: auto;
+  }
+
+  .about {
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    width: 100%;
+    color:whitesmoke;
+    font-size: 24px;
+    display: block;
+    margin-right: auto;
+  }
+
+  input {
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    font-family: "Nunito";
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #3b3b3b;
+    padding-bottom: auto;
+    border: 3px solid #636363;
+    border-radius: 5px;
+    width: 50%;
+    height: 5%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+}
+
+.submit {
+  position: absolute;
+  font-family: "Nunito";
+  font-size: 25px;
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 5%;
+  padding-top: 25px;
+  padding-bottom:25px;
+
+  padding-bottom: auto;
+  border: 1px solid whitesmoke;
+  border-width: 5px;
+  border-radius: 25px;
+  animation-fill-mode: forwards;  
+  transition: 0.25s;
+}
+
+.submit:hover {cursor: pointer; transform: scale(105%) translateX(40%);}
+
+  header {
+    animation: 2s anim-Header ease-out normal;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
+  }
+
+  
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0%);
+    }
+    20% {
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -100%);
+    }
+    100% {
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  @keyframes anim-lineUp2 {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0%);
+    }
+    20% {
+      top: 61%;
+      left: 50%;
+      opacity: 0;
+    }
+    50% {
+      top: 61%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -85%);
+    }
+    100% {
+      top: 61%;
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -85%);
+    }
+  }
+
+  @keyframes anim-Header {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  

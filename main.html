@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/load.css">
+
+    <link rel="stylesheet" href="./styles/ui/background.css">
+    <link rel="stylesheet" href="./styles/ui/header.css">
+    <link rel="stylesheet" href="./styles/ui/fade.css">
+    <link rel="stylesheet" href="./styles/ui/songs.css">
+    <script defer src="./scripts/script.js"></script>
+    <title style="font-size: 0;"></title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    
+    
+
+        
+</head>
+
+<body>
+    <a class="logo" style="text-align:left;" href="https://raf-aye.github.io/">rB</a>
+     <!--[if lt IE 7]>
+            <pYou are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="container" id = "mainMenu">
+        <h2 class='name' style = "color: #1DB954; transform: translate(-50%, -200%);">Spotify Reviewer</h2>
+        <h2 class='about'>Have your playlist be insulted by a ruthless AI</h2>
+        <input placeholder = "Link your Spotify Playlist Here" id = "spotifyurl"></input>
+        <h2 class='about' style = "transform: translate(-50%, 150%); color: red;" id = "error"></h2>
+        <button class = "submit" style = "transform: translate(246%, 650%);" onclick="getResults()">Lets Go!</button>
+   
+    </div>
+
+    <div style = "display: none; transform: translateY(200%);" id = "loading">
+        <div class = "loader"></div>
+        <h2 class = "name" style = "color: #1DB954; transform: translate(-50%, 200%); font-size: 36px;" id = "generateMSG">Generating Hatred...</h2>
+    </div>
+
+    <div class = "content" style = "display: none;" id = "data">
+        <div class="text-section" id = "review">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tincidunt eros, ac vestibulum metus. Duis eget arcu non turpis placerat malesuada. Nullam a odio a velit efficitur venenatis. Integer consectetur lectus eget est bibendum, quis vulputate lacus pretium. Donec convallis massa at arcu auctor, a varius libero tincidunt. Nullam sed dignissim justo, at dictum velit. Mauris ullamcorper, ligula a fringilla auctor, nulla mi consequat eros, non tempus nisl elit vel orci. Vestibulum tincidunt felis a purus posuere facilisis. Nulla facilisi. Aenean semper lectus nec ipsum varius, in fermentum lacus facilisis.</p>
+        </div>
+        <div class="rating-section">
+            RATING:
+            <div id="rating"></div>
+        </div>
+        <div class="song-container">
+            <div class="song-list" id="songList">
+                <div class="song-item">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

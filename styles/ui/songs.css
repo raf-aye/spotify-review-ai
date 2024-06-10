@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+.content {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-section {
+    transform: translate(10%, 35%);
+    width: 60%; /* Increased width for the text section */
+    margin-right: 5%;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    height: 80vh; /* Set a fixed height */
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.song-container {
+    transform: translate(230%, -80%);
+    width: 30%; /* Reduced width for the song list */
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* Change to flex-start to avoid cutting off */
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    font-family: 'Nunito', monospace;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    width: 100%; /* Ensure full width of the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.album-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.song-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.genres {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.genre {
+    font-family: 'Nunito', monospace;
+    background-color: #555;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 12px;
+    white-space: nowrap; /* Ensure the text does not wrap */
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    transform: translate(49%, -400%) scale(155%);
+    font-family: 'Source Code Pro', monospace;
+    color: whitesmoke;
+}
+
+#rating {
+    display: flex;
+    
+}
+
+.star {
+    
+    font-size: 24px;
+    color: #555; /* Default star color */
+}
+
+.star.filled {
+    color: gold; /* Filled star color */
+}
